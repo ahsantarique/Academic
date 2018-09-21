@@ -1,0 +1,2 @@
+This is another work around for mutating problem in Oracle Triggers
+http://www.srikanthtechnologies.com/blog/oracle/mutatingsolution.aspx

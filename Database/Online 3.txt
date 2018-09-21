@@ -1,0 +1,34 @@
+--1
+select d.department_name, m.last_name manager_name, m.HIRE_DATE, m.salary
+from EMPLOYEES m
+join DEPARTMENTS d
+on (d.MANAGER_ID= m.EMPLOYEE_ID)
+where SYSDATE-m.HIRE_DATE > 5*365;
+;
+
+SELECt * from DEPARTMENTS;
+SELECt * from EMPLOYEES;
+
+--2
+
+select e1.last_name, e1.salary
+from EMPLOYEES e1
+join DEPARTMENTS d
+on (d.DEPARTMENT_NAME = 'Sales')
+where 2 <= 
+(
+	select count(*)
+	from EMPLOYEES e2
+	where e2.salary < e1.salary
+)
+
+--3
+select m.LAST_NAME, count(e1.EMPLOYEE_ID) before, count(e2.employee_id) after
+from EMPLOYEES m
+join EMPLOYEES E1
+on E1.HIRE_DATE < m.HIRE_DATE
+join EMPLOYEES e2
+on e2.hire_DATE > M.HIRE_DATE
+GROUP BY m.LAST_NAME;
+
+

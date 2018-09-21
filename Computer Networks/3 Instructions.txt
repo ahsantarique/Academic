@@ -1,0 +1,11 @@
+Instructions:
+
+1) Extract pexpect-2.3.tar.gz
+2) go to the extracted folder from terminal and run the command:
+	sudo python ./setup.py install
+3) Copy the file testPexpect.py to your code folder
+4) Run all the routers first
+5) Instead of running the driver.py, run the testPexpect.py
+6) First test the system with already given topology 
+7) Now copy the setup and topo.txt to replace the previous ones 
+and test with the new topology. 

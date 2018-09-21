@@ -1,0 +1,8 @@
+Offline on Clustering
+In this assignment, you will implement K-means and DBSCAN clustering algorithms.
+
+You will have to implement DBSCAN. The dataset is attached. DBSCAN has two important parameters, EPS and MINPTS. These are calculated from the plot of 4-th Nearest Neighbour Distance vs Points Sorted According to 4th Nearest Neighbour. For the given dataset, you will have to make the plot and infer appropriate parameters, and use those to run DBSCAN.
+You will have to code the DBSCAN with flexible parameters. For some other dataset, you may have to use different EPS and MINPTS. So code rigorously. Using the parameters calculated from (1), run DBSCAN.
+Next, you will have to implement the K-means clustering algorithm. For K-means, we will have to provide the number of clusters to the algorithm (we do not have to do this for DBSCAN). This number of clusters will be determined from the results of the DBSCAN algorithm.
+
+So in a nutshell, you have to do the following: make a plot, determine DBSCAN parameters, determine the clusters and number of clusters, use that to run K-means. Finally, show the results in an image. Plot the clusters in different colors. You have to show the results of these two as the final outcome, so that the results can be compared with one another.

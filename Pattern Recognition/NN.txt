@@ -1,0 +1,38 @@
+Artificial Neural Network
+In this assignment you will implement a neural network.
+
+
+
+General guidelines:
+
+You should code in MATLAB.
+You should have only one .m file.
+Number of features, number of total samples, number of classes will be variable. Nothing will be specified. You have to understand from the data. For example, say the data file has the following three lines:
+
+
+1.2        1.4        tiger
+
+3.4        5.5        lion
+
+-.02       0.4        cheetah
+
+
+
+Then, there are three samples. The feature vectors are 2-dimensional. The target classes are: "tiger", "lion", "cheetah". You should already understand the input format. There will be n lines, one for n training samples. Each line will be of the form f1 f2 ... fK classLabel. Here, each fi is a real number. The class label is a string. The training samples are K dimensional. You should parse the entire file to determine the dimension of the feature space and the total number of target classes. Thus, the configuration of the input layer and the output layer is defined.
+
+For the hidden layer(s), the configuration will be provided in a file named "layer_configuration.txt". The file will contain one single line. If the line is "2 4 6" then it means that there are three hidden layers, and the first hidden layer will have 2 neurons, the second hidden layer will have 4 neurons, and the third hidden layer will have 6 neurons.
+
+Thus the input data file and the layer configuration file together defines the configuration of the network. Then the backpropagation that you have implemented will find out synaptic weights of the neurons. Note that the number of layers, number of neurons in a layer, number of training samples, feature dimension of the input patterns all are variable. These must not be hard-coded.
+
+
+
+Coding Guidelines:
+
+ Do not declare anything globally. Everything should be defined within a function. This is important because otherwise the global variables are not freed automatically and peculiarities arise.
+
+
+
+Output:
+
+For all the train samples, show i) the feature vector ii) the actual class and iii) the class predicted by your network.
+Finally show the accuracy, precision and recall.

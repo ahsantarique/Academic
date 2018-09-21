@@ -1,0 +1,5 @@
+select e.last_name, e.salary, j.*
+from employees e
+left outer join jobs j
+on (e.salary> 1000);
+

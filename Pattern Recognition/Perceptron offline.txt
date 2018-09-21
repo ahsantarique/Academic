@@ -1,0 +1,28 @@
+Perceptron Assignment
+In this assignment you will implement following variations of perceptron algorithm.
+
+Basic Perceptron
+Reward and Punishment
+Pocket Algorithm
+
+
+General guidelines:
+
+You must code in MATLAB. No other language is acceptable.
+Write three separate ".m" files for the three variations.
+Number of features will be variable. You must not hard-code for say two features. The given sample train/test files may contain 2 features in a feature vector and the train/test files that will be used for checking the offline may have 3/4 features. Failure to process variable number of features will result in penalties.
+Since you are not implementing Kesler's constructions, all the three variants will be of binary classifications.
+Number of training samples will be variable. The given sample train file(s) may contain 100 training samples and the train file(s) that will be used for checking the offline may have 3000 training samples.Your script should be able to handle that.
+The train samples may be scattered. Note the train file used in the online. The training samples of class 1 and class 2 are not interleaved in the file. That means when you see a sample of class 2, it means no sample of class 1 is after this. However, for this assignment, the classes can be interleaved.
+For the Pocket Algorithm, the dataset may be different, i.e. linearly non-separable. But it should work just fine for linearly separable cases as well.
+
+
+Output:
+
+For all the train samples, show i) the feature vector ii) the actual class and iii) the class predicted by your perceptron.
+Finally show the accuracy, precision and recall.
+
+
+Additional Works (Not Mandatory):
+
+Try to show the perceptron and the training samples in an image as well. If the feature dimension is less than four, this can be performed. Mark the positive examples and negative examples with different colors.
